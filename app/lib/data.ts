@@ -45,7 +45,7 @@ export async function fetchInvoiceStatsByStatus() {
 
 export async function fetchCustomerCount() {
   try {
-    const data = sql<Number>`
+    const data = sql`
       SELECT count(id) from customers;
     `;
     
